@@ -1,4 +1,6 @@
 import { signIn, signOut, useSession } from 'next-auth/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 import styles from './Home.module.css';
 
@@ -7,7 +9,7 @@ export default function Home() {
 
   if (session) {
     return (
-        <div className={styles.container2}>
+      <div className={styles.container}>
         <h1 className={styles.welcome}>Bienvenido, {session.user.name}!</h1>
         <Image 
           src={session.user.image} 
@@ -34,7 +36,7 @@ export default function Home() {
       <Image 
         src="/logo.png" 
         alt="Logo de la aplicación" 
-        width={300} 
+        width={450} 
         height={150} 
         priority 
         className={styles.logo}
@@ -45,7 +47,7 @@ export default function Home() {
       <div className={styles['form-group']}>
         <input
           type="text"
-          placeholder="Nombre su Usuario"
+          placeholder="Nombre de Usuario"
           className={styles.input}
         />
       </div>
@@ -70,6 +72,7 @@ export default function Home() {
           className={`${styles.button} ${styles.buttonPrimary}`}
           onClick={() => signIn('google')}
         >
+          <FontAwesomeIcon icon={faGoogle} className={styles.icon}/>
           Iniciar sesión con Google
         </button>
       </div>
