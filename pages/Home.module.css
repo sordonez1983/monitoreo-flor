@@ -1,0 +1,72 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.logo {
+  width: 300px;
+  height: 150px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.buttonPrimary {
+  background-color: #0070f3;
+  color: white;
+}
+
+.buttonSecondary {
+  background-color: #555;
+  color: white;
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.welcome {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #444;
+}
