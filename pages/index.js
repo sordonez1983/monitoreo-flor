@@ -7,7 +7,7 @@ export default function Home() {
 
   if (session) {
     return (
-      <div className={styles.container}>
+        <div className={styles.container2}>
         <h1 className={styles.welcome}>Bienvenido, {session.user.name}!</h1>
         <Image 
           src={session.user.image} 
@@ -28,7 +28,9 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.background}>
+      <div className={styles.overlay}></div>
+      <div className={styles.container}>
       <Image 
         src="/logo.png" 
         alt="Logo de la aplicación" 
@@ -37,35 +39,42 @@ export default function Home() {
         priority 
         className={styles.logo}
       />
-      <h1 className={styles.title}>MONITOREO DE FLOR</h1>
+      <h1 className={styles.title}>Monitoreo de Flor</h1>
       <h2 className={styles.subtitle}>Inicio de Sesión</h2>
-      <form className={styles.form}>
-        <label htmlFor="usuario" className={styles.label}>Usuario</label>
+      <form>
+      <div className={styles['form-group']}>
         <input
           type="text"
-          placeholder="Ingrese su Usuario"
+          placeholder="Nombre su Usuario"
           className={styles.input}
         />
-        <label htmlFor="clave" className={styles.label}>Contraseña</label>
+      </div>
+      <div className={styles['form-group']}>
         <input
           type="password"
-          placeholder="Ingrese su Contraseña"
+          placeholder="Contraseña"
           className={styles.input}
         />
+      </div>
+      <div className={styles['form-group']}>
+        <button
+          type="button"
+          className={`${styles.button} ${styles.buttonSecondary}`}
+        >
+          Acceder
+        </button>
+      </div>
+      <div className={styles['form-group']}>  
         <button
           type="button"
           className={`${styles.button} ${styles.buttonPrimary}`}
           onClick={() => signIn('google')}
         >
-          Iniciar sesión
+          Iniciar sesión con Google
         </button>
-        <button
-          type="button"
-          className={`${styles.button} ${styles.buttonSecondary}`}
-        >
-          Registrarse
-        </button>
+      </div>
       </form>
+    </div>
     </div>
   );
 }
