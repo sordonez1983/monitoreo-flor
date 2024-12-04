@@ -1,32 +1,17 @@
-import { signIn, signOut, useSession } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useRouter } from 'next/router';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 import styles from './Home.module.css';
 
 export default function Home() {
   const { data: session } = useSession();
+  const router = useRouter();
 
   if (session) {
-    return (
-      <div className={styles.container}>
-        <h1 className={styles.welcome}>Bienvenido, {session.user.name}!</h1>
-        <Image 
-          src={session.user.image} 
-          alt={session.user.name} 
-          width={100} 
-          height={100} 
-          className={styles.profileImage} 
-        />
-        <p>¡Has iniciado sesión con Google!</p>
-        <button 
-          onClick={() => signOut()} 
-          className={`${styles.button} ${styles.buttonPrimary}`}
-        >
-          Cerrar sesión
-        </button>
-      </div>
-    );
+    router.push('/ingreso_flor');
+    return null;
   }
 
   return (
@@ -34,10 +19,10 @@ export default function Home() {
       <div className={styles.overlay}></div>
       <div className={styles.container}>
       <Image 
-        src="/logo.png" 
+        src="/logo2.png"
         alt="Logo de la aplicación" 
         width={450} 
-        height={150} 
+        height={200} 
         priority 
         className={styles.logo}
       />
