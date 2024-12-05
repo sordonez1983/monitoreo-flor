@@ -20,27 +20,6 @@ export default function Ingreso_flor() {
 
   return (
     <div className={styles.container2}>
-      {/* Encabezado */}
-      <header className={styles.header}>
-        <Image 
-            src="/logo.jpg" 
-            alt="Logo de la aplicación" 
-            width={130} 
-            height={70}
-      />
-        <h1 className={styles.welcome}>GARDAEXPORT S.A.</h1>
-        <div className={styles.userInfo}>
-          <Image 
-            src={session.user.image} 
-            alt={session.user.name} 
-            width={40} 
-            height={40}
-            className={styles.profileImage} 
-          />
-          <span>{session.user.name}<div><button className={styles.signOutButton} onClick={() => signOut()}>Cerrar sesión</button></div></span>
-        </div>
-      </header>
-
       {/* Contenido principal */}
       <main className={styles.main}>
         <h2>Ingrese el Monitoreo de Flor</h2>

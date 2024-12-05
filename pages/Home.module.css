@@ -106,6 +106,7 @@
   align-items: center;
   background: #5D8AA8;
   padding: 10px 20px;
+  border-radius: 3%;
 }
 
 .userInfo {
@@ -128,4 +129,48 @@
   text-decoration: underline;
   margin-top: 15px;
   cursor: pointer;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3px;
+  border-right: 1px solid #ccc;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu li {
+  margin: 15px 0;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #e1e1e1;
+}
+
+.container2 {
+  display: flex;
+  height: 100vh;
+}
+
+.divider {
+  display: flex;
+  border-bottom: 2px solid #ccc;
 }

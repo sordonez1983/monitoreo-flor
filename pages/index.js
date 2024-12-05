@@ -10,7 +10,7 @@ export default function Home() {
   const router = useRouter();
 
   if (session) {
-    router.push('/ingreso_flor');
+    router.push('/inicio');
     return null;
   }
 
