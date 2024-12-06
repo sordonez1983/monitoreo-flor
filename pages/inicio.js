@@ -35,8 +35,12 @@ export default function Inicio() {
         </div>
         <nav className={styles.menu}>
           <ul>
-            <li onClick={() => setActivePage('inicio')}>Inicio</li>
-            <li onClick={() => setActivePage('ingreso_flor')}>Ingreso</li>
+            <li onClick={() => setActivePage('inicio')}
+              className={activePage === 'inicio' ? styles.activeItem : ''}>
+                Inicio</li>
+            <li onClick={() => setActivePage('ingreso_flor')}
+              className={activePage === 'ingreso_flor' ? styles.activeItem : ''}>
+                Ingreso</li>
             <li>Reportes</li>
             <li>Configuraciòn</li>
           </ul>
