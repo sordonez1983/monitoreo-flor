@@ -4,9 +4,12 @@
 Se propone una aplicación móvil innovadora para optimizar los procesos fitosanitarios en el sector floricultor de Gardaexport S.A. Esta solución permitirá recolectar datos en tiempo real sobre el estado de las flores, facilitando la toma de decisiones informadas, reduciendo costos y mejorando la calidad del producto final.
 
 ## Objetivos:
-## Digitalización: Sustituir los registros manuales por una herramienta digital.
-Optimización: Mejorar la eficiencia de los procesos fitosanitarios.
-Información en tiempo real: Facilitar la toma de decisiones basadas en datos actualizados.
+## Digitalización:
+Sustituir los registros manuales por una herramienta digital.
+## Optimización: 
+Mejorar la eficiencia de los procesos fitosanitarios.
+## Información en tiempo real:
+Facilitar la toma de decisiones basadas en datos actualizados.
 Reducción de costos: Optimizar el uso de insumos químicos y recursos.
 
 ## Mapa de Capacidades:
