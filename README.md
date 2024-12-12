@@ -3,8 +3,7 @@
 
 ## Deploy Local:
 
-Open [http://localhost:3000]   con tu navegador para ver el resultado
-
+http://localhost:3000
 
 
 ## Deploy on Vercel:
