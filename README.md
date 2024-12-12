@@ -13,8 +13,10 @@ Facilitar la toma de decisiones basadas en datos actualizados.
 Reducción de costos: Optimizar el uso de insumos químicos y recursos.
 
 ## Mapa de Capacidades:
-## Foco: Monitoreo de flores.
-## Objetivo: Digitalizar y optimizar los procesos fitosanitarios.
+## Foco: 
+Monitoreo de flores.
+## Objetivo:
+Digitalizar y optimizar los procesos fitosanitarios.
 ## Beneficios:
 * Mejora de la calidad del producto.
 * Ahorro de recursos.
