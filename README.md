@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Digitalización del Monitoreo de Flores en Gardaexport S.A. con una Solución Móvil
 
-## Getting Started
+## Resumen Ejecutivo:
+Se propone una aplicación móvil innovadora para optimizar los procesos fitosanitarios en el sector floricultor de Gardaexport S.A. Esta solución permitirá recolectar datos en tiempo real sobre el estado de las flores, facilitando la toma de decisiones informadas, reduciendo costos y mejorando la calidad del producto final.
 
-First, run the development server:
+## Objetivos:
+* Digitalización: Sustituir los registros manuales por una herramienta digital.
+* Optimización: Mejorar la eficiencia de los procesos fitosanitarios.
+* Información en tiempo real: Facilitar la toma de decisiones basadas en datos actualizados.
+* Reducción de costos: Optimizar el uso de insumos químicos y recursos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Mapa de Capacidades:
+* Foco: Monitoreo de flores.
+* Objetivo: Digitalizar y optimizar los procesos fitosanitarios.
+## Beneficios: 
+* Mejora de la calidad del producto.
+* Ahorro de recursos.
+* Reducción de costos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![image](https://github.com/user-attachments/assets/0978e673-fae0-49ed-91ca-e87050cde44e)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Solución Propuesta:
+## Aplicación móvil
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Ingreso de datos en campo: Facilita la captura de información sobre plagas, enfermedades, etc.
+* Información en tiempo real: Presenta datos actualizados sobre el estado de las flores.
+* Alertas: Notifica al usuario sobre posibles problemas o acciones a tomar.
+* Integración con sistemas existentes: Se conecta a la base de datos SQL Server de Gardaexport S.A. para una gestión centralizada de la información.
 
-## Learn More
+## Implementación:
+* Frontend: React con Next.js para un desarrollo de aplicaciones web de una sola página (SPA) eficiente y con renderizado en el lado del servidor (SSR).
+* Backend: Se utiliza Node.js y se consume API de google
 
-To learn more about Next.js, take a look at the following resources:
+## Desarrollo:
+* Entorno de desarrollo: Visual Studio Code con extensiones como ESLint, Prettier y debugging para mejorar la productividad y la calidad del código.
+* Gestión de versiones: Git para controlar los cambios en el código y colaborar compartir la tarea.
+* Despliegue: Vercel para un despliegue automático y escalable de la aplicación, y localmente para pruebas y desarrollo.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Integración con Google Sign-In:
+* Biblioteca: Se utiliza la biblioteca oficial de Google Sign-In para JavaScript para gestionar la autenticación de usuarios.
+* Flujo de autenticación: El usuario inicia sesión con su cuenta de Google, se obtiene un token de acceso y se utiliza para verificar la identidad del usuario y obtener información de su perfil.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Prototipado:
 
-## Deploy on Vercel
+![image](https://github.com/user-attachments/assets/42426d0e-ca64-4c8f-a6bc-7d209dba3c73)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy Local:
+http://localhost:3000
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy on Vercel:
+https://monitoreo-flor.vercel.app/
